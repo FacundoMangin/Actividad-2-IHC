@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+.titulo{
+    font-size: clamp(2.5rem, 3.5rem, 15vw);
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(77, 77, 77);
+    color: rgb(139, 84, 12);
+    font-family: 'Lilita One', cursive;
+    padding: 1.5rem 2rem;
+}
+
+p {
+    font-size: clamp(1rem, 1.2rem, 5vw);
+    text-align: center;
+    padding: 0 10%;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+.informacion {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+
+}
+
+.informacion-2 {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    background-color: rgb(252, 245, 236);
+    border-top: 2px solid rgba(185, 141, 90, 0.993);
+    border-bottom: 2px solid rgba(185, 141, 90, 0.993);
+ 
+}
+
+.informacion-3 {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    border-bottom: 2px solid rgba(185, 141, 90, 0.993);
+
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.texto p{
+    font-size: clamp(0.8rem, 1rem, 5vw);
+    text-align: center;
+    padding: 0 10%;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container-texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3% 0%;
+}
+
+.img-informacion img{
+    width: clamp(20rem, 20rem, 90vw);
+    box-shadow: 1px 1px 5px 5px rgba(32,32,32,0.3);
+}
+
+.img-informacion img{
+    width: clamp(20rem, 20rem, 90vw);
+    box-shadow: 1px 1px 5px 5px rgba(32,32,32,0.3);
+}
+
+
+
+
+@media screen and (max-width: 1050px){
+    .container-texto{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 0px;
+    }
+
+    .container{
+        padding: 5px !important;
+    }
+
+    .img-informacion img{
+        display: none;
+    }
+
+
+    .texto p{
+        padding: 0;
+    }
+  } 
