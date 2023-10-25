@@ -91,7 +91,7 @@ p {
 @media screen and (max-width: 1050px){
     .container-texto{
         display: flex;
-        flex-direction: column;
+
         gap: 3rem;
         padding: 0px;
     }

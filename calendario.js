@@ -226,7 +226,7 @@ function gotoDate() {
       return;
     }
   }
-  alert("Dato invalido");
+  alert("Invalid Date");
 }
 
 //function get active day day name and date and update eventday eventdate
@@ -236,6 +236,7 @@ function getActiveDay(date) {
   eventDay.innerHTML = dayName;
   eventDate.innerHTML = date + " " + months[month] + " " + year;
 }
+
 
 //function update events when a day is active
 function updateEvents(date) {
@@ -288,8 +289,6 @@ addEventTitle.addEventListener("input", (e) => {
   addEventTitle.value = addEventTitle.value.slice(0, 60);
 });
 
-
-defineProperty();
 
 //allow only time in eventtime from and to
 addEventFrom.addEventListener("input", (e) => {
@@ -404,7 +403,7 @@ addEventSubmit.addEventListener("click", () => {
 //function to delete event when clicked on event
 eventsContainer.addEventListener("click", (e) => {
   if (e.target.classList.contains("event")) {
-    if (confirm("¿Estás seguro de que deseas eliminar este evento?")) {
+    if (confirm("Estás seguro de que deseas eliminar este evento")) {
       const eventTitle = e.target.children[0].children[1].innerHTML;
       eventsArr.forEach((event) => {
         if (
